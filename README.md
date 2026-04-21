@@ -537,7 +537,7 @@ Por su parte, el PDSI exhibe una relación negativa leve con el año, lo que sug
 
 El presente repositorio expone una **síntesis del Trabajo Final de Grado**, con el objetivo de mostrar el enfoque metodológico, las herramientas utilizadas y los principales resultados obtenidos en el desarrollo de un gemelo digital aplicado a la administración del territorio.
 
-En particular, el contenido aquí publicado abarca hasta la etapa de **análisis exploratorio de datos**, incluyendo la construcción del dataset integrado y el estudio de relaciones entre variables mediante herramientas como la **matriz de correlación**.
+En particular, el contenido aquí publicado abarca hasta la etapa de **análisis exploratorio de datos**, incluyendo la construcción del dataset integrado y el estudio de relaciones entre variables mediante herramientas como la `matriz de correlación`.
 
 A partir de este punto, el trabajo continúa con etapas más avanzadas...
 
