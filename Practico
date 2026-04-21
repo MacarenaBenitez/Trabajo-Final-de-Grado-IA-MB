@@ -1,0 +1,199 @@
+<div align="justify">
+
+<h2 align="center">FACULTAD DE CIENCIAS EXACTAS, FÍSICAS Y NATURALES</h2>
+<h3 align="center">UNIVERSIDAD NACIONAL DE CÓRDOBA</h3>
+<h3 align="center">Departamento de Agrimensura</h3>
+<h3 align="center">Ingeniería en Agrimensura</h3>
+<h3 align="center">Cátedra de TRABAJO FINAL</h3>
+
+<h2 align="center">“Gemelo Digital para evaluar el impacto de la sequía meteorológica en el valor de la tierra rural”</h2>
+
+<p align="center">
+Autora: Macarena Benítez<br>
+Profesores: Luis Antonio Bosch – Mario Andrés Piumetto – Santiago Masquijo
+</p>
+
+<h3 align="center">RESUMEN</h3>
+
+El presente Trabajo Final tiene como propósito estudiar el uso de gemelos digitales para la administración del territorio, con un enfoque en el impacto de la sequía meteorológica en el valor de la tierra rural. Además, busca brindar información sobre la utilización de esta tecnología y su implementación efectiva. Esta tecnología, aunque ya empleada en diversas industrias, ha comenzado a ganar protagonismo en el ámbito técnico y académico, sin embargo, su comprensión sigue siendo limitada. Aún persisten dudas sobre su concepto, los métodos de aplicación, el uso de software especializado y los costos asociados. En el contexto de la administración del territorio, el uso de gemelos digitales se encuentra en una fase inicial lo que plantea la necesidad de más estudios y evaluaciones sobre su potencial y limitaciones. 
+Este trabajo analizará el impacto de la sequía meteorológica en el valor unitario de la tierra rural, y el rol del gemelo digital  para modelar, predecir, simular y gestionar estas variaciones valorativas de manera eficiente. Para ello, se emplearán para el procesamiento y la experimentación, Google Colab como entorno computacional, utilizando Python para la limpieza, el modelado, simulación y predicción. Además, se explorará la interrelación entre los aspectos ambientales y tecnológicos con el campo de la administración territorial, destacando su importancia en la gestión y planificación del territorio.
+OBJETIVOS DEL TRABAJO
+
+**Objetivo general**
+
+Sistematizar el conocimiento existente sobre el uso de gemelos digitales en la administración del territorio con el fin de proponer recomendaciones que promuevan su implementación efectiva en el campo de aplicación.
+
+**Objetivos específicos**
+
+Identificar definiciones, usos, tecnologías y evolución de los gemelos digitales en el ámbito del territorio. 
+Analizar las aplicaciones prácticas y la capacidad de representación, simulación, predicción y optimización de los gemelos digitales en el ámbito territorial a partir del estudio de casos internacionales.
+Desarrollar un prototipo de gemelo digital para analizar el impacto de la sequía en el valor de la tierra rural.
+Elaborar recomendaciones para ampliar el uso de gemelos digitales en los desafíos de la gestión territorial, a partir del estudio bibliográfico y el prototipo desarrollado.
+
+**Metodología** 
+
+La metodología adoptada en este estudio es mixta y de diseño exploratorio-descriptivo. En primer término, se realizó una revisión exhaustiva de la literatura que abarca estudios previos sobre los gemelos digitales como artículos académicos, libros, conferencias, entrevistas, proyectos relevantes que hayan utilizado esta tecnología en diferentes contextos, noticias, entrevistas y trabajos finales de otros países.  De esta manera, se realizó un análisis documental y de contenido de fuentes secundarias para la elaboración del problema de estudio, estado del arte y marco teórico. En segunda instancia, se realizaron entrevistas dirigidas a profesionales de diferentes rubros, abarcando tanto el ámbito provincial como nacional. Estas entrevistas fueron individuales y semiestructuradas, constando de 10 preguntas del tipo abierto, de seguimiento y de clarificación. 
+Asimismo, se adoptó la técnica de la encuesta dirigida a estudiantes, profesionales vinculados a la administración del territorio como así también a profesionales de diferentes rubros de alcance provincial y nacional con el objetivo de relevar niveles de conocimiento, capacidades técnicas y limitaciones de los gemelos digitales para la administración del territorio. El cuestionario fue autoadministrado, con preguntas cerradas y abiertas, de carácter anónimo respaldando la confidencialidad de los resultados. Estos fueron procesados con el sistema Power Bi Desktop que permite una visualización interactiva y la integración de datos. En algunas respuestas abiertas se aplicó Voyant Tools, que es una plataforma más avanzada de análisis de texto que admite múltiples archivos de texto de gran tamaño o largos bloques de contenido. 
+Finalmente, fue seleccionada la zona de estudio departamento Unión, específica donde se desarrolló un gemelo digital para la administración del territorio enfocado a un área específica de sequía meteorológica. El mismo fue elaborado a partir de Google Colab que es una herramienta gratuita de Google que permite programar y ejecutar código en la nube. Se realizaron simulaciones y predicciones para evaluar diferentes escenarios actuales y/o futuros. Los resultados obtenidos se sistematizaron para identificar y señalar las mejores prácticas para la gestión y planificación territorial. 
+
+**CAPÍTULO V: GEMELO DIGITAL PARA EVALUAR EL IMPACTO DE LA SEQUÍA EN EL VALOR UNITARIO DE TIERRA RURAL**
+
+**5.1 Descripción de la zona de estudio: Departamento Unión, Córdoba**
+
+Unión es el cuarto departamento en la provincia de Córdoba en cuanto a su superficie con su ciudad cabecera en Bell Ville, una de las principales ciudades de la región. Este departamento está compuesto por cinco pedanías: Ascasubi, Ballesteros, Bell Ville, Litín y Loboy. El departamento limita con al norte con el departamento San Justo; al este , con el departamento Marcos Juárez; al sur ,con el departamento Presidente Roque Sáenz Peña; al oeste, con los departamentos Juárez Celman y General San Martín; y al noroeste, con el departamento Río Segundo.
+![Mapa](https://drive.google.com/uc?export=view&id=1-5hY030JC0Gp1d2sLnKoHrtxUdyoBTrZ)
+
+*Figura 57: Ubicación de la zona de estudio. Fuente: Elaboración propia.*
+
+A nivel organizativo, el departamento Unión está compuesto por 23 municipios y 4 comunas, lo que refleja su distribución administrativa y la diversidad de localidades que lo conforman. 
+
+![Mapa](https://drive.google.com/uc?export=view&id=1yZYuF-iHAZvhVkORdW96EXd8DDqangki)
+
+*Figura 58: Demarcación, Hidrográfica y Red Vial.  Fuente: Elaboración propia.*
+
+En relación a la geografía, el departamento forma parte de la llanura pampeana y su sector norte tiene una red de drenaje no integrada, en forma de cañadas interrumpidas con dirección nordeste, que llevan sus aguas hacia la depresión de San Antonio (Arroyo Tortugas). El Río Tercero (Ctalamochita), es el más importante debido a su caudal y forma numerosos meandros y lagunas a lo largo de su curso. El Río Cuarto (Cochancaragua),  tiene un nivel de base temporario en los Bañados del Saladillo. 
+
+![Mapa](https://drive.google.com/uc?export=view&id=1aIPZ04gCBUWxfjs-grj6zbDtK0NbBHdW)
+
+*Figura 59: Red Hidrográfica y cuenca interprovincial.  Fuente: Elaboración propia.*
+
+**5.2 Justificación del estudio en esta zona**
+La elección del Departamento Unión, Provincia de Córdoba, como zona de estudio para analizar el impacto de la sequía en el valor de la tierra rural se fundamenta en su elevada exposición a periodos prolongados de falta de lluvias, siendo una de las áreas más vulnerables de la provincia. Los registros meteorológicos evidencian una variabilidad climática significativa, con episodios que afectan la calidad del suelo y la rentabilidad de las actividades agropecuarias. 
+Asimismo, el Departamento Unión constituye un polo productivo relevante dentro del sector agrícola, destacándose por la producción extensiva de cultivos como soja, maíz y trigo los cuales dependen de las precipitaciones. Por este motivo, la escasez de agua tiene un impacto significativo en la región, no sólo en términos económicos sino también a través de procesos de degradación ambiental. Los periodos prolongados de falta de lluvias intensifican la erosión, reducen la cobertura vegetal y afectan a la biodiversidad, impactando tanto en la flora nativa como la fauna silvestre. Del mismo modo, los cuerpos de agua temporales y permanentes sufren retracciones o desapariciones estacionales prolongadas, provocando un impacto significativo en los equilibrios ecológicos regionales.
+Teniendo en cuenta las variables mencionadas, el presente estudio tiene por objeto evaluar el impacto histórico de las sequías en la valuación de la tierra rural del departamento elegido e indagar en la existencia de otras variables predecibles que posibiliten mitigar los efectos de este fenómeno.
+
+![Mapa](https://drive.google.com/uc?export=view&id=1B3YEjUStzYh2Hkto6ygBfaByRpFhg6tc)
+
+*Figura 60: La laguna La Brava, se quedó sin agua y perdió su flora y fauna. 22 de enero de 2023. Fuente:  La Voz y La Posta Digital.*
+
+![Mapa](https://drive.google.com/uc?export=view&id=1PGRDCtI6V5N0Z3CPe_Xku1QpFzNX5Fo1)
+
+*Figura  61: Ubicación de La Laguna Brava, Dpto Unión, Pedania Loboy. Fuente: Elaboración propia.*
+
+![Mapa](https://drive.google.com/uc?export=view&id=1aXR7nYjBMRnmS7sRbJGhkWG1aDHPiVWS)
+
+*Figura 62: Distribución anual de cuerpos de agua (2020-2024). Fuente: Elaboración propia a partir de imágenes Sentinel - 2 en Google Earth Engine mediante scripts ejecutados en Google Colab.*
+
+**5.3 Sobre el estudio y la comprensión del fenómeno de la sequía**
+
+El estudio de la sequía se ha abordado de diferentes formas y con diversas metodologías, dependiendo de quién la analiza y del objetivo de la investigación, así como de la conceptualización. En el contexto institucional, la Organización Meteorológica Mundial (1922, citado en Sistema de Información sobre Sequías para el Sur de Sudamérica, s.f.) define la sequía como “un período de tiempo con condiciones meteorológicas anormalmente secas, suficientemente prolongado como para que la falta de precipitación cause un grave desequilibrio hidrológico” (párr. 1).
+ Por su parte, la Convención de las Naciones Unidas de Lucha contra la Desertificación (UNCCD, 1994)  la define como el “fenómeno que se produce naturalmente cuando las lluvias han sido considerablemente inferiores a los niveles normales registrados, causando un agudo desequilibrio hídrico que perjudica los sistemas productivos de la tierra” (art. 1, p. 1).
+En cuanto a los factores causantes de la sequía, estos se asocian a fases extremas de la variabilidad climática en diferentes escalas temporales. Así, se ha establecido que en la escala interanual las anomalías climáticas provocadas por el ciclo La Niña frecuentemente generan condiciones de sequía en algunas regiones. Sin embargo, no todas las sequías que ocurren en una región están relacionadas con este ciclo ( UNCCD, 1994).
+
+**5.3.1 Clasificación de las sequías**
+
+En la actualidad, las sequías siguen representando un desafío significativo, especialmente en regiones donde el cambio climático ha intensificado su frecuencia y severidad. A diferencia de otros eventos extremos, el inicio de una sequía suele ser poco perceptible, pero sus efectos pueden volverse críticos a medida que la escasez de agua se prolonga en el tiempo.
+Dada la magnitud de los impactos, resulta fundamental comprender la sequía como un proceso que involucra tanto factores meteorológicos como hidrológicos y socioeconómicos.  Bobba y Minetti (2010) proponen una clasificación universal de la sequía en cuatro categorías:
+- Meteorológica: Se basa en datos climáticos y refleja la reducción de la precipitación respecto al valor promedio en un período determinado.
+- Agrícola: Se produce cuando la humedad en el suelo es insuficiente para el desarrollo adecuado de los cultivos en cualquier fase de su crecimiento.
+- Hidrológica: Se refiere a una deficiencia en el caudal o volumen de agua superficial o subterránea, afectando ríos, lagos y vertientes.
+- Socioeconómica: Se manifiesta cuando la escasez de agua genera daños económicos o impactos negativos en la población de la zona afectada.
+El presente estudio se centra en las sequías meteorológicas , dado que representan uno de los mayores desafíos ambientales y socioeconómicos en la administración del territorio, especialmente en regiones propensas a cambios climáticos significativos. Este fenómeno, caracterizado por un déficit prolongado de precipitaciones, afecta no solo la disponibilidad de agua, sino también tiene consecuencias en los ecosistemas, la producción agrícola, el desarrollo y la calidad de vida de la población.
+
+**5.3.2  Eventos de sequía y respuesta normativa en la provincia de Córdoba (2020–2024)**
+
+![Mapa](https://drive.google.com/uc?export=view&id=1_VRMijJqN5523fEDsdV7qaRihKWEVQy-)
+
+*Figura 63: Línea de tiempo que sintetiza la evolución de la sequía en la provincia de Córdoba durante el período 2020–2024. Fuente: Elaboración propia*
+
+La Figura 63: presenta una línea de tiempo que sintetiza la evolución de la sequía en la provincia de Córdoba durante el período 2020–2024, integrando los distintos tipos de sequía y la respuesta institucional asociada. En el año 2020 se identifican condiciones de sequía meteorológica, caracterizadas por un déficit de precipitaciones a escala provincial. Durante 2021 y 2022, la persistencia de la escasez de lluvias deriva en una sequía meteorológica e hidrológica, evidenciada por la disminución progresiva de las reservas hídricas destinadas al consumo, riego y actividades productivas.
+El período 2022–2023 representa la fase más crítica, correspondiente a una sequía meteorológica prolongada, con impactos hidrológicos, agrícolas y económicos generalizados. Esta situación motivó la declaración del estado de emergencia agropecuario en la provincia de Córdoba mediante el Decreto Provincial N.º 136/2023, posteriormente homologado a nivel nacional por la Resolución 290/2023, habilitando beneficios fiscales y financieros en el marco de la Ley Nacional 26.509, tales como prórrogas y exenciones impositivas, suspensión de ejecuciones fiscales y acceso a mecanismos de asistencia crediticia y refinanciación de deudas para los productores afectados. Finalmente, en el año 2024 se observa un cambio de tendencia, con la finalización del evento La Niña 2020–2023 y una recuperación parcial de las precipitaciones, las reservas hídricas y los suelos, configurando una etapa post-sequía.
+La normativa analizada no establece modificaciones directas sobre la valuación fiscal ni sobre el valor de la tierra rural. No obstante, al habilitar beneficios fiscales y financieros, introduce un marco institucional que puede incidir indirectamente en el comportamiento del mercado de tierras y en los procesos de cambio valuatorio asociados a eventos de sequía.
+
+**5.3.3 Impacto de las sequías en la producción agropecuaria y el en el valor de la tierra rural**
+
+Uno de los aspectos en los que se manifiesta el impacto económico de las sequías se manifiesta en el aumento de los costos operativos. En este sentido, la adquisición de insumos como el agua se vuelve más onerosa lo que afecta la competitividad de los productores y puede generar endeudamiento en el sector agropecuario. Además, la pérdida de vegetación y la erosión acelerada del suelo contribuyen a la desertificación, disminuyendo la capacidad productiva de las tierras y comprometiendo la sostenibilidad de las actividades agropecuarias a largo plazo.
+Por su parte, las condiciones climáticas extremas pueden incidir en el valor unitario de la tierra rural, el cual se define como la evaluación técnica por unidad de superficie que refleja la capacidad productiva y el potencial territorial de cada parcela. Dado que este valor se determina a partir de ciertas características como la aptitud del suelo, la localización y las condiciones ambientales predominantes, los eventos de sequía pueden alterar indirectamente los factores que sustentan dicha valuación. 
+Así mismo, la percepción de riesgo frente a eventos climáticos recurrentes puede influir en la demanda de tierras rurales y en las expectativas de rentabilidad de los inversores. En este escenario, la necesidad de contar con herramientas capaces de integrar múltiples variables (ambientales, económicas y territoriales) se vuelve fundamental para anticipar posibles escenarios y reducir la exposición al riesgo. 
+En en este marco es que se plantea la creación del Gemelo Digital para representar, analizar y proyectar de manera dinámica la relación entre sequías y valor unitario de la tierra rural. 
+En este contexto, el Gemelo Digital constituye una construcción de información virtual dinámica del territorio rural que replica la estructura espacial, el comportamiento climático y la respuesta productiva real del suelo ante eventos de sequía. De este modo se actualiza con datos observados (clima, datos catastrales y valuatorios), imita la evolución real de la sequía y su efecto sobre la productividad y el valor unitario de la tierra, y permite predecir posibles escenarios para orientar decisiones estratégicas de gestión territorial y valuación rural.
+
+**5.4 Proceso de creación del Gemelo Digital**
+
+En este apartado se describe el proceso metodológico adoptado para la construcción del gemelo digital aplicado al análisis del territorio rural. Dicho proceso se estructura de manera sistemática e integra la selección de la herramienta, la recolección de datos provenientes de múltiples fuentes, su preprocesamiento estadístico y espacial, la aplicación de modelos predictivos y la generación de visualizaciones a lo largo de las distintas etapas del flujo de trabajo.
+A través de esta secuencia, se busca representar de forma dinámica la interacción entre variables climáticas, productivas y territoriales, posibilitando no solo la comprensión del comportamiento histórico del sistema, sino también la simulación de escenarios y el soporte en la toma de decisiones en contextos de sequía.
+
+![Mapa](https://drive.google.com/uc?export=view&id=1g3kXT0rMcRFPDpQQzIlMtPfVGaYUCju0)
+
+*Figura 64: Esquema de creación del Gemelo Digital. Fuente: Elaboración propia*
+
+**5.4.1 Primera etapa: selección de la herramienta y recolección de datos** 
+
+La creación del gemelo digital se apoya en el uso de herramientas de ciencia de datos, con el objetivo de garantizar la trazabilidad, la reproducibilidad y la flexibilidad en el análisis. 
+
+![Mapa](https://drive.google.com/uc?export=view&id=1_9PifWL_V__8qWaDoRidYhpYXl7Fe9Qr)
+
+*Figura 65:Elección de tecnología. Fuente: Elaboración propia*
+
+En particular, se emplea Google Colab, un entorno de programación en la nube basado en Python, que posibilita la integración de diferentes fuentes de datos, la aplicación de algoritmos de aprendizaje automático, la automatización de procesos de pre-procesamiento y modelado. 
+La elección de esta herramienta responde a su carácter abierto en términos de acceso y escalable, cualidades que resultan fundamentales para el desarrollo metodológico, aunque con una capacidad  límite de RAM (~12 GB) que puede alcanzar para tareas medianas.
+Para el análisis de la sequía, se emplean diversos indicadores, que son variables utilizadas para caracterizar las condiciones de sequía. Estos incluyen la precipitación, la temperatura, los caudales fluviales, los niveles de aguas subterráneas, la capacidad de los embalses, la humedad del suelo y el manto de nieve. A partir de estos indicadores, se desarrollan índices que representan numéricamente la magnitud de la sequía en base a datos climáticos e hidrometeorológicos. Sin embargo, no existe un índice único que pueda cuantificar de manera integral la intensidad y severidad de la sequía ni evaluar con precisión su impacto potencial.
+Entre los índices más utilizados a nivel global se encuentran el Índice de Palmer (PDSI), el Índice de Precipitación Estandarizado (SPI) y el Índice de Precipitación-Evapotranspiración Estandarizado (SPEI), entre otros. 
+Para el presente estudio, se utilizaron datos del Índice de Sequía de Palmer (PDSI) proporcionados por el Centro de Relevamiento y Evaluación de Recursos Agrícolas y Naturales (CREAN), el cual realiza el monitoreo de sequías en la región . En este sentido, cabe aclarar que las diferencias metodológicas en las fuentes de datos pueden dar lugar a discrepancias en la evaluación de la sequía, ya que cada una se basa en distintas escalas temporales y espaciales, así como también en criterios específicos para el cálculo del índice.
+
+![Mapa](https://drive.google.com/uc?export=view&id=11_TIzRSCNL5Q_ru0W5QWRL0Zucs2ktQd)
+
+*Figura  66: Registro histórico de sequía mediante el índice de Palmer-Estación Meteorológica Marcos Juárez . Fuente: Datos CREAN.*
+
+La Figura 66 muestra que las sequías no son fenómenos instantáneos, sino prolongados en el tiempo. Pueden durar varios años y tener distintas intensidades. Un valor de PDSI más negativo implica mayor severidad en la sequía, lo cual afecta directamente la disponibilidad de agua para cultivos, ecosistemas y actividades humanas.
+Debido a la disponibilidad de información sobre el valor de la tierra rural  y del PDSI se seleccionó el período de tiempo comprendido entre los años 2020 y 2024 para realizar el análisis y la construcción del gemelo digital.
+
+![Mapa](https://drive.google.com/uc?export=view&id=1s2vy40CQigSKp9Sy71dVzqD0toVhQfvw)
+
+*Figura 67: Periodo comprendido. Fuente: Elaboración propia con datos de Mapas Córdoba*
+
+**5.4.1.1 Dependencias y librerías**
+
+Las dependencias y librerías en Google Colab son componentes que permiten extender las capacidades básicas de Python y ejecutar análisis avanzados sin necesidad de instalar software en la computadora del usuario. Las dependencias son los requisitos adicionales que estas librerías necesitan para funcionar correctamente. Muchas veces una librería no funciona sola, sino que depende de otras librerías más pequeñas, de compiladores, de controladores, o de extensiones del sistema. Por ejemplo: earthengine-api requiere autenticación y paquetes auxiliares para conectarse con Google Earth Engine.
+
+![Mapa](https://drive.google.com/uc?export=view&id=1Z3v1pHa4GxgM2Wo5xANdS9RmUaHpYBSM)
+
+*Figura 68: Instalación de dependencias. Fuente: Elaboración propia.*
+
+Una librería es un conjunto de funciones, clases y módulos ya desarrollados que resuelven tareas específicas, como procesamiento de datos, visualización de gráficos, manejo de imágenes satelitales, conexión a servicios web o ejecución de modelos de aprendizaje automático.
+
+![Mapa](https://drive.google.com/uc?export=view&id=1Z3v1pHa4GxgM2Wo5xANdS9RmUaHpYBSM)
+
+*Figura 69: Instalación de librerías. Fuente: Elaboración propia.*
+
+![Mapa](https://drive.google.com/uc?export=view&id=1EW0OSfdTOkX7EJehydyqc3izcZqdzsED)
+
+*Figura 70: descripción. Fuente: Elaboración propia.*
+
+**5.4.1.2 Datos del CREAN**
+
+Se creó una cuenta en GitHub y se alojó el conjunto de datos proporcionados por el CREAN en formato CSV dentro de un repositorio para su resguardo y control de versiones. 
+A partir de ese repositorio, el archivo se integró al entorno de Google Colab mediante su URL lo que permitió después importar directamente los datos provistos para  garantizar su trazabilidad y reproducibilidad en el análisis. En la visualización inicial se obtuvo una tabla con registros correspondientes a las Estaciones Meteorológicas de Marcos Juárez y Laboulaye, que constituyen la base de información climática para este estudio dentro del periodo 2020-2024.
+
+# URLs RAW de archivos en GitHub 
+
+url_laboulaye = "https://raw.githubusercontent.com/MacarenaBenitez/TESIS/main/Labulaye%20Aero%2087534.csv"
+url_marcos = "https://raw.githubusercontent.com/MacarenaBenitez/TESIS/main/Marcos%20Juarez%20Aero%2087467.csv"
+
+**5.4.1.3 Datos de IDECOR**  
+
+En este trabajo, se utilizó la API de IDECOR para vincular y acceder a la información del Departamento Unión, integrando como capas principales departamento, pedanías,  parcelas rurales, los radios urbanos,  el valor de la tierra rural, red vial, e  hidrología. 
+Esta conexión posibilitó la obtención de datos actualizados en formato interoperable, condición fundamental para su posterior preprocesamiento y análisis.  La API brinda acceso a un total de 455 capas disponibles, de las cuales en este estudio se seleccionaron únicamente aquellas consideradas más pertinentes para los objetivos planteados.
+Una vez construida la API en Python para la conexión con los servicios geoespaciales, y verificadas correctamente las capas disponibles mediante su visualización preliminar, se procedió a la descarga individual de cada una de ellas. En primer lugar, se obtuvo la capa correspondiente al Departamento Unión utilizando el servicio WFS, lo que permitió acceder a su geometría y atributos asociados en formato vectorial. Esta descarga constituyó la base territorial sobre la cual se integraron posteriormente las restantes capas temáticas requeridas (pedanías,parcelas, radios urbanos, red vial e hidrología).
+Luego procedió a la construcción de una representación de la zona de estudio. Para ello, se combinaron las geometrías del departamento Unión con las pedanías que lo conforman, asignando a cada una un estilo visual que facilitara su identificación. La visualización resultante permitió delimitar espacialmente el área de análisis. 
+Además, se elaboró una representación que integra la red vial, la hidrología y los radios urbanos del departamento Unión, empleando como base un mapa satelital para contextualizar visualmente la distribución espacial de estas infraestructuras. En esta visualización se combinaron las capas de red vial nacional, provincial y regional, junto con los cursos de agua, acueductos y cuerpos de agua naturales, permitiendo identificar la estructura territorial y la conectividad interna del departamento. La incorporación de los radios urbanos en conjunto con estas capas facilitó el entendimiento del vínculo entre las áreas pobladas y las redes de infraestructura.
+## Mapa interactivo
+
+👉 https://macarenabenitez.github.io/Trabajo-Final-de-Grado-IA-MB/red%20vial.html
+
+**5.4.1.4 Caracterización del área de análisis**
+
+Cada pedanía que integra el departamento Unión presenta particularidades en cuanto a su infraestructura, la disponibilidad de recursos hídricos y la organización territorial. Estas diferencias permiten reconocer la heterogeneidad interna del departamento, la cual  aporta elementos para interpretar cómo las condiciones ambientales y los factores de infraestructura inciden en el desarrollo socioeconómico y en la gestión del territorio.
+A partir de las capas vectoriales descargadas, se construyó una tabla de síntesis de infraestructura e hidrografía por pedanía para el Departamento Unión. En primer lugar, todas las capas involucradas (pedanías, cuerpos de agua, cursos de agua, radios urbanos, acueductos y red vial nacional, provincial y regional) fueron reproyectadas a un sistema de referencia común (EPSG:5346), con el fin de garantizar la consistencia espacial de los análisis. Luego, se normalizaron los nombres de las pedanías y se filtraron aquellas correspondientes al departamento de interés (Ascasubi, Ballesteros, Bell Ville, Litín y Loboy). Sobre esta base, se aplicaron uniones espaciales (spatial join) entre cada capa temática y la capa de pedanías, utilizando la relación de intersección para asignar a cada elemento de infraestructura o hidrografía la pedanía en la que se encuentra. Posteriormente, se realizaron agregaciones por pedanía mediante operaciones de conteo, obteniendo el número de cuerpos de agua, cursos de agua, radios urbanos, acueductos y segmentos de red vial nacional, provincial y regional presentes en cada una. Finalmente estos conteos se integraron en una única tabla resumen, completando los valores faltantes con cero y destacando en cada columna los valores máximos, lo que permitió identificar de manera comparativa las pedanías con mayor concentración de elementos de infraestructura e hidrografía dentro del Departamento Unión.
+
+![Mapa](https://drive.google.com/uc?export=view&id=1oP6ksqvhOWjHuScT-OjJKWsB4bOuUklB)
+
+*Figura 71: descripción. Fuente: Elaboración propia.*
+
+La Figura 71:  muestra la distribución de infraestructura e hidrografía en las pedanías del departamento Unión. En cuanto a cuerpos de agua naturales, Ascasubi se destaca con la mayor cantidad registrada (133), seguida por Loboy con 76, mientras que Ballesteros, Litin y Bell Ville presentan valores más bajos. Respecto a los cursos de agua, Ballesteros presenta 7, mientras que Bell Ville registra  6, superando ambas a las demás pedanías, las cuales se mantienen en valores cercanos a 4. En radios urbanos, Bell Ville y Ascasubi lideran con 7, en tanto que Loboy alcanza 6, Litín y Ballesteros 5. En relación con la infraestructura de acueductos, Ascasubi sobresale con 9, mientras que Loboy cuenta con 8 y Litín con 4, evidenciando una mayor cobertura en el sur del departamento. La red vial nacional se concentra en Bell Ville con 232 tramos, siendo la pedanía más conectada en términos de rutas de jerarquía nacional. La red vial provincial muestra su máxima extensión en Ascasubi con 989 registros, seguida de Bell Ville con 760 y Litín con 693, lo que refleja una fuerte presencia de rutas provinciales en estas pedanías. Por último, en red vial regional, tanto Litín como Ascasubi alcanzan el valor máximo con 4, indicando un desarrollo equilibrado en este tipo de infraestructura. 
+En conjunto, los datos permiten identificar a Ascasubi y Bell Ville como los principales nodos de concentración de infraestructura y recursos hídricos en el departamento Unión, mientras que Loboy se destaca por su número de acueductos.
+
+## Mapa interactivo
+
+👉 [Ver mapa interactivo](https://macarenabenitez.github.io/Trabajo-Final-de-Grado-IA-MB/mapa_maximos_pedanias.html)
+
